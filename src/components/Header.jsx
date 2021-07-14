@@ -8,7 +8,7 @@ const Header = () => {
                 <h1>Full Stack Software Developer</h1>
                 <Typed 
                     className="typed-text"
-                    strings={["JavaScript", "ReactJS", "Python", "MongoDB"]}
+                    strings={["JavaScript", "ReactJS", "Python", "MongoDB", "Django", "Express", "PostgreSQL", "HTML", "Bootstrap"]}
                     typeSpeed={40}
                     backSpeed={60}
                     loop

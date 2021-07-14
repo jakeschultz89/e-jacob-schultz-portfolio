@@ -11,6 +11,8 @@
     --primary-red: #ef4035;
     --primary-black: #000000;
     --primary-dark-green: #404733;
+    --primary-transparent-black: #rgba(0,0,0,0.7);
+    --primary-green: green;
 }
 
 body {
@@ -358,13 +360,17 @@ nav ul li {
     margin-left: -8rem;
     margin-top: 3.6rem;
     color: var(--primary-orange);
-    font-size: 1.5rem;;
+    font-size: 1.5rem;
 }
 
 .portfolio-image-box:hover .portfolio-icon {
     opacity: 70%;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+}
+
+.popupbox-wrapper {
+    margin-top: 7rem;
 }
 
 /*************OVERFLOW BOX********************/
