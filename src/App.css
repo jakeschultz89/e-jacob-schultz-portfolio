@@ -26,18 +26,22 @@ nav {
 }
 
 .logo {
-    width: 16.25rem;
+    width: 15.25rem;
     position: relative;
-    top: -85px;
-    left: -430px;
+    top: -5rem;
+    left: -27rem;
 }
 
 /*************MENU LINKS****************/
 nav a.nav-link {
-    font-size: .8rem;
+    font-size: 1rem;
     letter-spacing: 0.0375rem;
     cursor: pointer;
+
 }
+
+
+
 
 nav ul li {
     transform: uppercase;
@@ -46,8 +50,10 @@ nav ul li {
 .navbar-nav > li a {
     margin-right: 0.75rem;
     margin-left: 0.75rem;
+    align-items: right;
     color: var(--primary-white) !important;
     border-top: 0.1875rem solid var(--primary-dark);
+    
 }
 
 .navbar-brand {
@@ -77,13 +83,13 @@ nav ul li {
     background: url(background.jpg) no-repeat;
     background-size: cover;
     background-position: center;
-    height: 90vh;
+    height: 100vh;
 }
 
 .main-info {
     display: flex;
     position: absolute;
-    top: 0;
+    top: 12rem;
     left: 0;
     right: 0;
     bottom: 0;
@@ -242,7 +248,7 @@ nav ul li {
 
 .experience h1 {
     text-transform: uppercase;
-    color: var(--primary-orange)
+    color: var(--primary-dark)
 }
 
 .experience-wrapper::before {
@@ -278,7 +284,7 @@ nav ul li {
     height: 1rem;
     border-radius: 50%;
     border: 0.3125rem solid var(--primary-dark);
-    background: var(--primary-orange);
+    background: var(--primary-dark);
     margin-top: 0.625rem;
     z-index: 3;
 }
@@ -328,15 +334,18 @@ nav ul li {
 
 .portfolio-image {
     width: 15rem;
-    border: 1px solid var(--primary-orange);
+    border: 1px solid var(--primary-black);
     padding: 0 0.5rem;
 }
 
 .portfolio-image-box {
     position: relative;
-    margin: 1rem;
+    margin: 0rem;
 }
 
+.popupbox-wrapper {
+    margin-top: 7rem;
+}
 /****************** OVERFLOW BOX *****************/
 .overflow {
     position: absolute;
@@ -381,11 +390,11 @@ nav ul li {
 
 .hyper-link {
     cursor: pointer;
-    color: var(--primary-orange);
+    color: var(--primary-black);
 }
 
 .hyper-link:hover {
-    color: var(--primary-red);
+    color: blue;
 }
 
 /*************MEDIA********************/
@@ -411,4 +420,125 @@ nav ul li {
     .portfolio-image-popupbox {
         width: 30%;
     }
+}
+
+/*************CONTACTS COMPONENT********************/
+.contacts {
+    background-color: var(--primary-dark);
+    padding: 3rem 0;
+}
+
+.contacts h1 {
+    color: var(--primary-orange);
+    padding: 1.3rem 0;
+    text-transform: uppercase;
+}
+
+.contacts p {
+    color: var(--primary-lightgrey);
+    font-size: 1.2rem;
+}
+
+/*************INPUTS********************/
+.contacts input, .contacts textarea {
+    width: 100%;
+    box-sizing: border-box;
+    background: none;
+    resize: none;
+    border: 0;
+    border-bottom: 0.125rem solid var(--primary-darkgrey);
+    border-radius: 0;
+    color: var(--primary-orange);
+    outline: 0 !important;
+    box-shadow: none !important;
+    margin-bottom: 1rem;
+    padding-left: 0 !important;
+}
+
+.contacts .container {
+    padding: 4rem 0;
+}
+
+.contacts input:focus, .contacts textarea:focus {
+    background: transparent;
+    color: var(--primary-orange);
+    border-bottom: 0.125rem solid var(--primary-darkgrey);
+}
+
+.contacts textarea {
+    height: 12.2rem !important;
+}
+
+.contact-btn {
+    margin: 1rem 0 0 0;
+    width: 100%;
+    background: none;
+}
+
+.line {
+    position: relative;
+    top: -0.8rem;
+    width: 0;
+    height: 0.125rem;
+    background: var(--primary-orange);
+    display: inline-block;
+}
+
+input:focus+.line, textarea:focus+.line {
+    width: 100%;
+    transition: width 0.5s ease-in-out;
+
+}
+
+input.form-control {
+    margin: -0.3rem 0;
+}
+
+textarea.form-control {
+    margin: -0.3rem 0;
+}
+
+/* ------------------MEDIA------------------- */
+@media(max-width: 768px) {
+    .contacts {
+        overflow-x: hidden;
+    }
+    
+    .contacts .container {
+        padding: 0 1rem;
+    }
+
+    .contacts p {
+        padding: 0 0.4rem;
+    }
+}
+
+/* ------------------FOOTER------------------- */
+.footer {
+    background: var(--primary-black);
+    color: var(--primary-darkgrey);
+    padding: 2rem;
+}
+
+.align-items-center {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--primary-darkgrey);
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: var(--primary-orange);
+    cursor: pointer;
+}
+
+.footer p {
+    margin-bottom: 0;
+    
 }

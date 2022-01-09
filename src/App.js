@@ -6,35 +6,13 @@ import AboutMe from './components/AboutMe';
 // import Services from './components/Services';
 import Experience from './components/Experience';
 import Portfolio from './components/Portfolio';
-// import Contact from './components/Contact';
+// import Contacts from './components/Contacts';
 // import Testimonials from './components/Testimonials';
-// import Footer from './components/Footer';
-// import Particles from 'react-particles-js';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
-    {/* <Particles
-        className="particles-canvas"
-        params={{
-            particles: {
-                number: {
-                    value: 30,
-                    density: {
-                        enabled: true,
-                        value_area: 900
-                    }
-                },
-                shape : {
-                    type: "circle",
-                    stroke: {
-                        width: 6,
-                        color: "#f9ab00"
-                    }
-                }
-            }
-        }}
-    /> */}
     <Navbar />
     <Header />
     <AboutMe />
@@ -42,8 +20,8 @@ function App() {
     <Experience />
     <Portfolio />
     {/* <Testimonials /> */}
-    {/* <Contact /> */}
-    {/* <Footer /> */}
+    {/* <Contacts /> */}
+    <Footer />
     </>
   );
 }

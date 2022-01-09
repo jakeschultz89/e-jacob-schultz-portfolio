@@ -17,7 +17,7 @@ const Portfolio = () => {
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={proj1} alt="proj 1 image" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repudiandae quos magnam dicta sint iusto soluta dolore similique, ipsum necessitatibus? Totam expedita hic sint architecto. Commodi, explicabo quo. Illo, tenetur.</p>
+                <p>This is my first app. I built a trivia game based on software engineering trivia using HTML, CSS and JavaScript.</p>
                 <b>GitHub: </b><a className="hyper-link" onClick={() => window.open("https://github.com/jakeschultz89/Software-Engineer-Interview-Simulator.git")}>https://github.com/jakeschultz89/Software-Engineer-Interview-Simulator.git</a>
             </>
         )
@@ -38,7 +38,7 @@ const Portfolio = () => {
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={proj2} alt="proj 2 image" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repudiandae quos magnam dicta sint iusto soluta dolore similique, ipsum necessitatibus? Totam expedita hic sint architecto. Commodi, explicabo quo. Illo, tenetur.</p>
+                <p>I built this app after being inspired Untappd (Social media app for beer reviews among friends) as a way to share video game reviews with friends. I intend to revisit this app and integrate more features.</p>
                 <b>GitHub: </b><a className="hyper-link" onClick={() => window.open("https://github.com/jakeschultz89/iPlayed.git")}>https://github.com/jakeschultz89/iPlayed.git</a>
             </>
         )
@@ -59,7 +59,7 @@ const Portfolio = () => {
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={proj3} alt="proj 3 image" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repudiandae quos magnam dicta sint iusto soluta dolore similique, ipsum necessitatibus? Totam expedita hic sint architecto. Commodi, explicabo quo. Illo, tenetur.</p>
+                <p>A team built app - We used APIs from SpaceX to build an informational app where users can learn about SpaceX projects and also view an up-to-date tracker of multiple Starlink satelites. This project was built using ReactJS, NodeJS, Express and MongoDB.</p>
                 <b>GitHub: </b><a className="hyper-link" onClick={() => window.open("https://github.com/brandonhall96/react-project-3.git")}>https://github.com/brandonhall96/react-project-3.git</a>
             </>
         )
@@ -80,7 +80,7 @@ const Portfolio = () => {
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={proj4} alt="proj 4 image" />
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur repudiandae quos magnam dicta sint iusto soluta dolore similique, ipsum necessitatibus? Totam expedita hic sint architecto. Commodi, explicabo quo. Illo, tenetur.</p>
+                <p>A team built app - We used the OMDB API to build a database in MongoDB and created a Netflix clone using ReactJS on the front end. A priority stretch goal of this project is to integrate a video player so that users can watch trailers for each movie on the app.</p>
                 <b>GitHub: </b><a className="hyper-link" onClick={() => window.open("https://github.com/brandonhall96/fakeflix.git")}>https://github.com/brandonhall96/fakeflix.git</a>
             </>
         )
@@ -101,25 +101,25 @@ const Portfolio = () => {
             <div className="container">
                 <h1 className="text-uppercase text-center py-5">Projects</h1>
                 <div className="image-box-wrapper row justify-content-center">
-                    <div className="portfolio-image-box" onClick={openPopupboxProj1}>
+                    <div className="portfolio-image-box col-3" onClick={openPopupboxProj1}>
                     <img className="portfolio-image" src={proj1} alt="Software Engineer Interview Simulator" />
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 {/* - */}
-                    <div className="portfolio-image-box" onClick={openPopupboxProj2}>
+                    <div className="portfolio-image-box col-3" onClick={openPopupboxProj2}>
                     <img className="portfolio-image" src={proj2} alt="iPlayed" />
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                 </div>
                 {/* - */}
-                    <div className="portfolio-image-box" onClick={openPopupboxProj3}>
+                    <div className="portfolio-image-box col-3" onClick={openPopupboxProj3}>
                     <img className="portfolio-image" src={proj3} alt="FakeX" />
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 {/* - */}
-                    <div className="portfolio-image-box" onClick={openPopupboxProj4}>
+                    <div className="portfolio-image-box col-3" onClick={openPopupboxProj4}>
                     <img className="portfolio-image" src={proj4} alt="Fakeflix" />
                     <div className="overflow"></div>
                     <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
