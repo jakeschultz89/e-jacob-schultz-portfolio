@@ -29,7 +29,8 @@ nav {
     width: 15.25rem;
     position: relative;
     top: -5rem;
-    left: -27rem;
+    left: -20rem;
+    
 }
 
 /*************MENU LINKS****************/
@@ -40,7 +41,10 @@ nav a.nav-link {
 
 }
 
-
+.navbar-nav {
+    display: flex;
+    align-items: flex-end;
+}
 
 
 nav ul li {
