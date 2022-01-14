@@ -23,18 +23,35 @@ body {
 
 nav {
     z-index: 2;
+    display: flex;
 }
 
 .logo {
     width: 15.25rem;
     position: relative;
     top: -5rem;
-    left: -20rem;
+    margin-left: 10%;
+    justify-self: left;
     
+}
+
+.navbar .container {
+    margin: 0 !important;
+    width: 100% !important;
+    padding: 0;
+    /* justify-content: space-between; */
+}
+
+
+
+.navbar ul {
+    margin: 1px solid red !important;
+    justify-content: right;
 }
 
 /*************MENU LINKS****************/
 nav a.nav-link {
+    display: flex;
     font-size: 1rem;
     letter-spacing: 0.0375rem;
     cursor: pointer;
@@ -46,8 +63,14 @@ nav a.nav-link {
     align-items: flex-end;
 }
 
+nav ul {
+    display: flex;
+    /* justify-self: right; */
+    margin-right: 0;
+}
 
 nav ul li {
+    display: flex;
     transform: uppercase;
 }
 
@@ -145,7 +168,7 @@ nav ul li {
 
 /****************** PARTICLES JS *****************/
 
-.tsparticles-canvas-el {
+/* .tsparticles-canvas-el {
     position: absolute;
     height: 100vh;
     width: 100vw;
@@ -156,7 +179,7 @@ nav ul li {
     .particles-canvas {
         display: none;
     }
-}
+} */
 
 /****************** ABOUT ME *****************/
 .photo-wrap {
@@ -350,6 +373,16 @@ nav ul li {
 .popupbox-wrapper {
     margin-top: 7rem;
 }
+
+/****************** MEDIA *****************/
+
+@media(max-width: 768px) {
+    .portfolio-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
 /****************** OVERFLOW BOX *****************/
 .overflow {
     position: absolute;
