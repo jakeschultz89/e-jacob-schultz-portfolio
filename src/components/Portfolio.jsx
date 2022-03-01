@@ -80,8 +80,8 @@ const Portfolio = () => {
         const content = (
             <>
                 <img className="portfolio-image-popupbox" src={proj4} alt="proj 4 image" />
-                <p>A team built app - We used the OMDB API to build a database in MongoDB and created a Netflix clone using ReactJS on the front end. A priority stretch goal of this project is to integrate a video player so that users can watch trailers for each movie on the app.</p>
-                <b>GitHub: </b><a className="hyper-link" onClick={() => window.open("https://github.com/brandonhall96/fakeflix.git")}>https://github.com/brandonhall96/fakeflix.git</a>
+                <p>A team built app - We used Pygame to build a sidescrolling platform video game. The player takes on the role of a junior enlisted service member and must avoid getting caught by their superiors. We have some stretch goals for this game which include aspects such as having power-ups, improved graphics and a more structured storyline.</p>
+                <b>GitHub: </b><a className="hyper-link" onClick={() => window.open("https://github.com/jakeschultz89/python-game.git")}>https://github.com/jakeschultz89/python-game.git</a>
             </>
         )
         PopupboxManager.open({ content })
@@ -90,7 +90,7 @@ const Portfolio = () => {
     const popupboxConfigProj4 = {
         titleBar: {
             enable: true,
-            text: "Fakeflix"
+            text: "Semper Skate"
         },
         fadeIn: true,
         fadeInSpeed: 500
